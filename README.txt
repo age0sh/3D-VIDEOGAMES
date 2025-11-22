@@ -1,3 +1,4 @@
+Desarrollado para la clase de Simulación cómo proyecto final del profesor Dr. José Luis David Bonilla Carranza
 Creador: Alexis Geovanni Sanchez Hernandez
 
 Controles
