@@ -1,0 +1,79 @@
+[gd_scene load_steps=2 format=3 uid="uid://di3vlm0vay116"]
+
+[ext_resource type="PackedScene" uid="uid://x01chpifjosn" path="res://caja.tscn" id="1_aex51"]
+
+[node name="torre cajas" type="StaticBody3D"]
+
+[node name="caja" parent="." instance=ExtResource("1_aex51")]
+
+[node name="caja2" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.51889116, 0)
+
+[node name="caja8" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2456956, 0, 0)
+
+[node name="caja9" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2456956, 0.51889116, 0)
+
+[node name="caja3" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0236034, 0)
+
+[node name="caja10" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.266112, 0, 1.2175877)
+
+[node name="caja11" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.266112, 0.51889116, 1.2175877)
+
+[node name="caja12" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.266112, 1.0236034, 1.2175877)
+
+[node name="caja13" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.266112, 1.5095387, 1.2175877)
+
+[node name="caja18" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.266112, 0, 3.927829)
+
+[node name="caja19" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.266112, 0.51889116, 3.927829)
+
+[node name="caja20" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.266112, 1.0236034, 3.927829)
+
+[node name="caja21" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.266112, 1.5095387, 3.927829)
+
+[node name="caja42" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -1.2472177, 0, 7.330733)
+
+[node name="caja43" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -1.2472177, 0.51889116, 7.330733)
+
+[node name="caja44" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -1.2472177, 1.0236034, 7.330733)
+
+[node name="caja45" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -1.2472177, 1.5095387, 7.330733)
+
+[node name="caja46" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -1.2472177, 2.0000997, 7.330733)
+
+[node name="caja47" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -1.2472177, 2.4776616, 7.330733)
+
+[node name="caja30" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.02004999, 0, 5.155)
+
+[node name="caja31" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.02004999, 0.51889116, 5.155)
+
+[node name="caja32" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.02004999, 1.0236034, 5.155)
+
+[node name="caja33" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.02004999, 1.5095387, 5.155)
+
+[node name="caja35" parent="." instance=ExtResource("1_aex51")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.02004999, 2.014999, 5.155)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+disabled = true

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxsm4e33pld0"]
+
+[ext_resource type="PackedScene" uid="uid://bk1vqbd47hta8" path="res://models/Low Poly Furniture/Miscellaneous/Clock.fbx" id="1_gjei4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1cvk1"]
+size = Vector3(1.6240234, 1.6153564, 0.28051758)
+
+[node name="Reloj_pared" type="StaticBody3D"]
+
+[node name="Clock" parent="." instance=ExtResource("1_gjei4")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00048828125, -0.0014038086, -0.044555664)
+shape = SubResource("BoxShape3D_1cvk1")

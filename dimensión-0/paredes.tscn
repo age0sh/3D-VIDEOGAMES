@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://0xth7qahapb4"]
+
+[ext_resource type="PackedScene" uid="uid://cu0oc1t6235mr" path="res://models/Paredes/paredes.glb" id="1_23dcn"]
+
+[node name="Paredes" type="StaticBody3D"]
+
+[node name="paredes" parent="." instance=ExtResource("1_23dcn")]
+
+[editable path="paredes"]

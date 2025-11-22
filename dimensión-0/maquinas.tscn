@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bljvioq5woa6f"]
+
+[ext_resource type="PackedScene" uid="uid://b0l1d3w16utnw" path="res://models/muebles_maquinas/maquinas.glb" id="1_k4otq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k4otq"]
+size = Vector3(0.93273926, 4.4194794, 2.4007568)
+
+[node name="Maquinas" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.413178, 0.14405352, -3.3191667)
+shape = SubResource("BoxShape3D_k4otq")
+
+[node name="maquinas" parent="." instance=ExtResource("1_k4otq")]
+
+[node name="Cube_001" parent="maquinas" index="10"]
+visible = false
+
+[node name="Cube" parent="maquinas" index="11"]
+visible = false
+
+[editable path="maquinas"]

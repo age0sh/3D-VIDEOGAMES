@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dx5q204pym57y"]
+
+[ext_resource type="PackedScene" uid="uid://cmm4fp2ifhtb0" path="res://models/Fence Pack/Fencecorner.fbx" id="1_2o3os"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1q605"]
+size = Vector3(2.0076904, 3.9907227, 1.005127)
+
+[node name="valla_parque_esquina" type="StaticBody3D"]
+
+[node name="Fencecorner" parent="." instance=ExtResource("1_2o3os")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26402617, 0, 0.13249874)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.237854, 1.9758301, 0.13000488)
+shape = SubResource("BoxShape3D_1q605")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.26679277, 1.9758301, 0.6362047)
+shape = SubResource("BoxShape3D_1q605")

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://pa067tq2cwuu"]
+
+[ext_resource type="PackedScene" uid="uid://d000waudvcx2v" path="res://models/Low Poly Furniture/Miscellaneous/Pan.fbx" id="1_r3ec4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_53x0v"]
+size = Vector3(1.0322266, 0.21136475, 1)
+
+[node name="Sarten" type="RigidBody3D"]
+
+[node name="Pan" parent="." instance=ExtResource("1_r3ec4")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.016113281, -0.017913818, 0)
+shape = SubResource("BoxShape3D_53x0v")

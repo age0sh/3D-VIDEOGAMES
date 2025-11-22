@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://osux46wl1odv"]
+
+[ext_resource type="PackedScene" uid="uid://cmm4fp2ifhtb0" path="res://models/Fence Pack/Fencecorner.fbx" id="1_xtw41"]
+[ext_resource type="PackedScene" uid="uid://bnonwtmdt301p" path="res://models/Fence Pack/Fence.fbx" id="2_uttg0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1q605"]
+size = Vector3(2.0076904, 3.9907227, 1.005127)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xtw41"]
+size = Vector3(6.541355, 4.430542, 1.0803223)
+
+[node name="con_valla_parque_esquina" type="StaticBody3D"]
+
+[node name="Fencecorner" parent="." instance=ExtResource("1_xtw41")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16994405, -0.9873079, 0.13249874)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.33193612, 0.9885222, 0.13000488)
+shape = SubResource("BoxShape3D_1q605")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.17271066, 0.9885222, 0.6362047)
+shape = SubResource("BoxShape3D_1q605")
+
+[node name="valla_parque_sin_conector" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.289175, 0, 0)
+
+[node name="Fence" parent="valla_parque_sin_conector" instance=ExtResource("2_uttg0")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="valla_parque_sin_conector"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2658863, 1.2997437, -0.002319336)
+shape = SubResource("BoxShape3D_xtw41")

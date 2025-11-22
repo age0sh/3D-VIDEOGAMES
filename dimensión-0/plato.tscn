@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ck6acovp344r3"]
+
+[ext_resource type="PackedScene" uid="uid://d1or4immvf1oa" path="res://models/Low Poly Furniture/Miscellaneous/Plate.fbx" id="1_nqr00"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ytc7r"]
+size = Vector3(0.6011658, 0.09595019, 0.6135559)
+
+[node name="Plato" type="RigidBody3D"]
+
+[node name="Plate" parent="." instance=ExtResource("1_nqr00")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0061798096, 0.0052587334, -0.004135132)
+shape = SubResource("BoxShape3D_ytc7r")

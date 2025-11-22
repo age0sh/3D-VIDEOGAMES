@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://q85kyqvcqb6t"]
+
+[ext_resource type="PackedScene" uid="uid://byqeex4ii17tp" path="res://models/Low Poly Furniture/Shelves/Shelf C.fbx" id="1_agsoq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b8qfm"]
+size = Vector3(0.5015106, 1.6110086, 0.28405762)
+
+[node name="Estanteria1" type="StaticBody3D"]
+
+[node name="Shelf C" parent="." instance=ExtResource("1_agsoq")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 1.2136976, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.005264282, 1.2078981, -0.020874023)
+shape = SubResource("BoxShape3D_b8qfm")
+
+[editable path="Shelf C"]

@@ -1,0 +1,65 @@
+[gd_scene load_steps=7 format=4 uid="uid://cf2e7afom4sx1"]
+
+[ext_resource type="Texture2D" uid="uid://cvclvn31xcynh" path="res://models/parque/All bushes/bushes_dead/bush_long_square_corner_dead_hedge_open_bottom_dead.png" id="1_1wdyx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vk7bx"]
+resource_name = "bush_dead"
+transparency = 4
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_1wdyx")
+texture_filter = 2
+texture_repeat = false
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_q2ge1"]
+_surfaces = [{
+"aabb": AABB(0.0065784454, -5.9604645e-08, -0.99342155, 1.3552814, 1.8765137, 1.3529788),
+"format": 34896613377,
+"index_count": 102,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAgAEAAAAAwAFAAEAAwAGAAUABQAGAAcAAQAFAAgABQAHAAkABwAKAAkABwALAAoABQAJAAwABQAMAAgACQAKAA0ACQANAAwADgAKAAsADgALAAQADgANAAoAAgAOAAQADAANAA8ACAAMAA8ADgAQAA0AAgAQAA4AEQAPAA0ACAAPABEAEQANABAAAgASABAAEwARABAAEwAQABIAFAAIABEAFAARABMAEgAUABMAAgAUABIAAQAIABQAAgABABQA"),
+"name": "bush_dead",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 21,
+"vertex_data": PackedByteArray("AAAAABHsAAAAADw17ncAAAAAPDX+/wAAAAAAANuLAAAa7AAAEewAACp4PDXudwAADowAANuLAACfiwAAAAAAAIaL5fIQjAAAunc8NQAAAACP/zw1AAAAAKvrAAAAAAAAn4vl8gAAAACr6+XyAAAAAP//PDX//wAApbv//wAAAAAa7OXyEewAAES8///2uwAAAADl8hHsAAAAAP//9rsAAAAA5fLbiwAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tmp77"]
+resource_name = "bush_long_square_corner_dead_Sphere_060"
+_surfaces = [{
+"aabb": AABB(0.0065784454, -5.9604645e-08, -0.99342155, 1.3552814, 1.8765137, 1.3529788),
+"attribute_data": PackedByteArray("/////xSIP9j/////ImPBwP////9sjsLA/////3lpP9j/////DYfvV/////9yaPJX/////793LlL/////bI7BwP////95aRNt/////xSIE23/////ImPBwP////9jd87A/////7zE9Nj/////Y3e32P////9Ay87A/////2Ct4m3/////rX8VHP////9krRYc/////wKG4m3/////NXezoP////9gtZGw/////0x3jbD/////NKXEoP////8zd1SH//////7EJ5f/////M3cnl/////87tVSH/////2N3zsD/////u8T7bv////9Ay87A/////2N3+27/////N4g92P////9GY8HA/////42OwcD/////m2k92P////80iCFt/////5xpF23/////6nhjZ/////+Ojr/A/////5xpF23/////NogXbf////9EY7/A/////zJ24m3/////48kFHP/////qydlt/////698Dhz/////LrU7h//////u8veW/////2ClBpf/////7vIfh/////8HxUug/////xjzG7D/////YLUvsP////8H82Kg/////63V323/////dK4CHP////893Psb/////3mu6G3/////Mnbibf////8WydOF/////6Z8yoX/////Fsnrbf/////WcRrA/////55KNtj/////nkoRwP////9aeD/Y/////62HP9j/////UGAawP////+thxrA/////8xZP9g="),
+"format": 34896613407,
+"index_count": 102,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABwAIAAkABwAKAAgACwAMAA0ACwAOAAwADwAQABEADwASABAAEwAUABUAEwAWABQAFwAYABkAFwAaABgAGwAcAB0AGwAeABwAHwAgACEAHwAiACAAIwAkACUAJgAnACgAJgApACcAKgArACwAKgAtACsALgAvADAALgAxAC8AMgAzADQAMgA1ADMANgA3ADgANgA5ADcAOgA7ADwAOgA9ADsAPgA/AEAAPgBBAD8AQgBDAEQAQgBFAEMA"),
+"material": SubResource("StandardMaterial3D_vk7bx"),
+"name": "bush_dead",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 70,
+"vertex_data": PackedByteArray("AAAAABHs/78AADw17nf/vwAAPDX+//+/AAAAANuL/78AAOXyEez/vwAA5fLbi/+/AAD///a7/78AADw1/v//vwAA5fLbi/+/AADl8hHs/78AADw17nf/vwAAPDX+/7yKGuwAABHsvIoAAAAAEey8iv//PDX//7yKAAA8Ne539v+Gi+XyEIz2/wAA5fLbi/f/Kng8Ne539/8AAOXy24u+zkS8///2u77OAAD///a7vs6Gi+XyEIy+zgAA///2u0ixGuzl8hHsSLEAAOXyEexIsUS8///2u0ixAAA8Nf7/E4Ma7OXyEewTg///PDX//xODAADl8hHsE4OfiwAAAAD//4//PDUAAP//unc8NQAA//+r6wAAAAD//5+L5fIAAP//q+vl8gAA//+lu///AAD//7p3PDUAAP//q+vl8gAA//+fi+XyAAD//4//PDUAAP////88Nf//IMCr6+XyAAAgwI//PDUAACDAGuzl8hHsIMBEvP//9rtvzavr5fIAAHDNGuzl8hHsb82lu///AABwzYaL5fIQjEHepbv//wAAQN5EvP//9rtB3p+L5fIAAD/eKng8Ne53AMCfi+XyAAAAwIaL5fIQjADAunc8NQAAAMD//zw1///EwKvrAAAAAMTAGuwAABHsxMCP/zw1AADEwCp4PDXud5HAn4sAAAAAkcC6dzw1AACRwA6MAADbi5HAAAAAANuL//8qeDw17nf//wAAPDXud///DowAANuL//8CgP3/AoD9/wKA/f8DgP3/+H/w//h/8P/4f/D//3////9//v//f/7//3///ykAZIEJAEyAMwC7gQAA/39PewAAr4QAAK+EAABPewAA+P/5f/j/+X/4//h/+P/6f/7//3/+//9//v//f/7//3/+//9//v//f////3/+//9//3/+//9//v//f/7//3///xSA6v8UgOr/FIDq//9//v//f/7//3/+//9////9iIQE/YiEBP2IhAT9iIUENsoZJTXKFyU2yhklNcoXJQrfei8K33svCd96LwvffC9mhBr3ZoQa92aEGvdmhBr3mHLJGphyyRqYcskamHLJGi1lm/ItZZvyLWWb8i1lm/IEcf7/BHH+/wRx/v/6jv//")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_q2ge1")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1wdyx"]
+size = Vector3(2.4743958, 3.6429443, 0.50339794)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tmp77"]
+size = Vector3(1.0071335, 3.6263275, 1.2303467)
+
+[node name="arbusto_esquina" type="StaticBody3D"]
+
+[node name="bush_long_square_corner_dead" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_tmp77")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2467097, 1.814148, 0.00035709143)
+shape = SubResource("BoxShape3D_1wdyx")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9799004, 1.8164444, -0.36187744)
+shape = SubResource("BoxShape3D_tmp77")

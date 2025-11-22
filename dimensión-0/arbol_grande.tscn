@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bx1a1emf4sj8b"]
+
+[ext_resource type="PackedScene" uid="uid://4xmu72kgq8nk" path="res://models/PSX+ Forest Pack/Meshes/tree_big.fbx" id="1_qimom"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fe7gn"]
+height = 6.895752
+radius = 0.5961914
+
+[node name="arbol_grande" type="StaticBody3D"]
+
+[node name="tree_big" parent="." instance=ExtResource("1_qimom")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15214288, 0, -0.072312355)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13841724, 3.1895752, 0)
+shape = SubResource("CylinderShape3D_fe7gn")

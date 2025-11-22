@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://cqq26pqto73dk"]
+
+[ext_resource type="Script" uid="uid://dj6ujwavbm505" path="res://vendedor.gd" id="1_g1uvb"]
+[ext_resource type="PackedScene" uid="uid://vrnj8nk7adnu" path="res://models/NPC/vendedor/vendedor.glb" id="2_mp0sq"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0p5an"]
+height = 2.4838867
+radius = 1.3759766
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g1uvb"]
+radius = 0.27441406
+height = 2.5007324
+
+[node name="Vendedor" type="Area3D"]
+script = ExtResource("1_g1uvb")
+mi_dialogo = "¿Buscas algo para la cocina?... ¡Estás en el lugar indicado!"
+
+[node name="vendedor" parent="." instance=ExtResource("2_mp0sq")]
+
+[node name="male_player" parent="vendedor/rig/Skeleton3D" index="0"]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0.02825129, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3502479, 0)
+shape = SubResource("CylinderShape3D_0p5an")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.7984905, 0.3559121)
+billboard = 1
+text = "Presiona E para hablar"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -72.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/PanelContainer"]
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1407471, 0)
+shape = SubResource("CapsuleShape3D_g1uvb")
+
+[editable path="vendedor"]

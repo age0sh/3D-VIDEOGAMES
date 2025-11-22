@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cc01ciwe4ok2"]
+
+[ext_resource type="PackedScene" uid="uid://dyo56ltx0170i" path="res://models/Low Poly Furniture/blood font model.fbx" id="1_20l33"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_20l33"]
+size = Vector3(0.7429199, 0.9108887, 0.9227295)
+
+[node name="fuente_sangre" type="StaticBody3D"]
+
+[node name="blood font model" parent="." instance=ExtResource("1_20l33")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0028076172, 0.491333, -0.011047363)
+shape = SubResource("BoxShape3D_20l33")

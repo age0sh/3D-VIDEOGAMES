@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bee238qtkdy15"]
+
+[ext_resource type="PackedScene" uid="uid://b35s66n2upki0" path="res://models/PSX+ Forest Pack/Meshes/rock_2.fbx" id="1_fltro"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0kca3"]
+size = Vector3(2.0557327, 1.4493408, 2.9447021)
+
+[node name="piedra" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.003742218, 0.22467041, 0.116760254)
+shape = SubResource("BoxShape3D_0kca3")
+
+[node name="rock_2" parent="." instance=ExtResource("1_fltro")]

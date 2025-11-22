@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://pss2hutmdj2g"]
+
+[ext_resource type="Texture2D" uid="uid://ccf2doikidaht" path="res://models/PSX+ Forest Pack/Textures/tree_bark_dark.png" id="1_h8ste"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1v4vm"]
+albedo_texture = ExtResource("1_h8ste")
+
+[sub_resource type="BoxMesh" id="BoxMesh_ce0fn"]
+size = Vector3(8, 0.5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5e4ai"]
+size = Vector3(8, 0.5, 5)
+
+[node name="plataforma_larga" type="StaticBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_1v4vm")
+mesh = SubResource("BoxMesh_ce0fn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_5e4ai")

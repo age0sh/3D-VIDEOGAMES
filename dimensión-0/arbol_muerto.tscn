@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5f2io4y507ks"]
+
+[ext_resource type="PackedScene" uid="uid://cvqjmaaxnhm6q" path="res://models/PSX+ Forest Pack/Meshes/tree_dead.fbx" id="1_guhs7"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_7yytn"]
+height = 7.529785
+radius = 0.22753906
+
+[node name="arbol_muerto" type="StaticBody3D"]
+
+[node name="tree_dead" parent="." instance=ExtResource("1_guhs7")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.7443848, 0)
+shape = SubResource("CylinderShape3D_7yytn")

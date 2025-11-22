@@ -1,0 +1,255 @@
+[gd_scene load_steps=6 format=3 uid="uid://src7damt2glv"]
+
+[ext_resource type="Script" uid="uid://ccikuc2wfhew6" path="res://hud.gd" id="1_1xsix"]
+[ext_resource type="Texture2D" uid="uid://cshj5g3umq6sj" path="res://models/Pixel Health Bar/Bar/empty health bar.png" id="1_a2258"]
+[ext_resource type="Texture2D" uid="uid://deankfp4yj7ex" path="res://models/Pixel Health Bar/Bar/health bar.png" id="3_rftc2"]
+[ext_resource type="Texture2D" uid="uid://cptnu45gys0vg" path="res://models/Pixel Health Bar/pixil-frame-0.png" id="4_61f8s"]
+[ext_resource type="Texture2D" uid="uid://643apm8d51t" path="res://models/circulo-amarillo-2o91lmlgrjq4zhcc-removebg-preview.png" id="5_a2258"]
+
+[node name="HUD" type="Control" node_paths=PackedStringArray("health_bar", "stamina_bar", "coin_label", "lives_label", "game_over_panel", "victory_panel", "pause_panel", "fog_warning_panel", "fog_timer_label", "pause_menu_container", "pause_audio_container", "pause_menu_slider", "pause_game_slider") groups=["Player"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_1xsix")
+health_bar = NodePath("ContenedorIzquierdo/BarraVida")
+stamina_bar = NodePath("ContenedorIzquierdo/BarraEnergia")
+coin_label = NodePath("ContenedorIzquierdo/ContenedorMonedas/LabelMonedas")
+lives_label = NodePath("ContenedorIzquierdo/ContenedorMonedas/LabelVidas")
+game_over_panel = NodePath("GameOverPanel")
+victory_panel = NodePath("VictoryPanel")
+pause_panel = NodePath("PausePanel")
+fog_warning_panel = NodePath("FogWarningPanel")
+fog_timer_label = NodePath("FogWarningPanel/TimerLabel")
+pause_menu_container = NodePath("PausePanel/MenuContainer")
+pause_audio_container = NodePath("PausePanel/AudioContainer")
+pause_menu_slider = NodePath("PausePanel/AudioContainer/PauseMenuSlider")
+pause_game_slider = NodePath("PausePanel/AudioContainer/PauseGameSlider")
+
+[node name="PauseButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -8.0
+offset_bottom = 8.0
+grow_horizontal = 0
+
+[node name="ContenedorIzquierdo" type="VBoxContainer" parent="."]
+layout_mode = 1
+offset_right = 250.0
+offset_bottom = 100.0
+
+[node name="BarraVida" type="TextureProgressBar" parent="ContenedorIzquierdo"]
+layout_mode = 2
+texture_under = ExtResource("1_a2258")
+texture_progress = ExtResource("3_rftc2")
+
+[node name="BarraEnergia" type="TextureProgressBar" parent="ContenedorIzquierdo"]
+layout_mode = 2
+texture_under = ExtResource("1_a2258")
+texture_progress = ExtResource("4_61f8s")
+
+[node name="ContenedorMonedas" type="HBoxContainer" parent="ContenedorIzquierdo"]
+layout_mode = 2
+
+[node name="IconoMoneda" type="TextureRect" parent="ContenedorIzquierdo/ContenedorMonedas"]
+layout_mode = 2
+texture = ExtResource("5_a2258")
+expand_mode = 3
+
+[node name="LabelMonedas" type="Label" parent="ContenedorIzquierdo/ContenedorMonedas"]
+layout_mode = 2
+text = "x 0"
+
+[node name="LabelVidas" type="Label" parent="ContenedorIzquierdo/ContenedorMonedas"]
+layout_mode = 2
+text = "♥ x 3"
+
+[node name="GameOverPanel" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="GameOverPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.75686276, 0.03137255, 0.05882353, 0.43529412)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GameOverPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="GameOverPanel/VBoxContainer"]
+layout_mode = 2
+text = "GAME OVER"
+horizontal_alignment = 1
+
+[node name="NewGameButton" type="Button" parent="GameOverPanel/VBoxContainer"]
+layout_mode = 2
+text = "NUEVA PARTIDA"
+
+[node name="MenuButton" type="Button" parent="GameOverPanel/VBoxContainer"]
+layout_mode = 2
+text = "SALIR AL MENÚ"
+
+[node name="VictoryPanel" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="VictoryPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.3764706, 1, 0.40784314, 0.4745098)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VictoryPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -36.5
+offset_top = -17.5
+offset_right = 36.5
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VictoryPanel/VBoxContainer"]
+layout_mode = 2
+text = "VICTORIA"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MenuButton" type="Button" parent="VictoryPanel/VBoxContainer"]
+layout_mode = 2
+text = "VOLVER AL MENÚ"
+
+[node name="PausePanel" type="Control" parent="."]
+process_mode = 2
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuContainer" type="VBoxContainer" parent="PausePanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -78.0
+offset_top = -50.5
+offset_right = 78.0
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ResumeButton" type="Button" parent="PausePanel/MenuContainer"]
+layout_mode = 2
+text = "RESUMIR JUEGO"
+
+[node name="SaveGameButton" type="Button" parent="PausePanel/MenuContainer"]
+layout_mode = 2
+text = "GUARDAR PARTIDA"
+
+[node name="OptionsButton" type="Button" parent="PausePanel/MenuContainer"]
+layout_mode = 2
+text = "OPCIONES"
+
+[node name="MenuButton" type="Button" parent="PausePanel/MenuContainer"]
+layout_mode = 2
+text = "SALIR AL MENÚ"
+
+[node name="AudioContainer" type="VBoxContainer" parent="PausePanel"]
+process_mode = 2
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -58.0
+offset_top = -62.5
+offset_right = 58.0
+offset_bottom = 62.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Música Menú" type="Label" parent="PausePanel/AudioContainer"]
+process_mode = 2
+layout_mode = 2
+text = "MÚSICA MENÚ"
+
+[node name="PauseMenuSlider" type="HSlider" parent="PausePanel/AudioContainer"]
+process_mode = 2
+layout_mode = 2
+
+[node name="Música Juego" type="Label" parent="PausePanel/AudioContainer"]
+process_mode = 2
+layout_mode = 2
+text = "MÚSICA JUEGO"
+
+[node name="PauseGameSlider" type="HSlider" parent="PausePanel/AudioContainer"]
+process_mode = 2
+layout_mode = 2
+
+[node name="BackFromOptionsButton" type="Button" parent="PausePanel/AudioContainer"]
+process_mode = 2
+layout_mode = 2
+text = "VOLVER"
+
+[node name="FogWarningPanel" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WarningLabel" type="Label" parent="FogWarningPanel"]
+layout_mode = 2
+text = "¡SAL DE LA NIEBLA!"
+horizontal_alignment = 1
+
+[node name="TimerLabel" type="Label" parent="FogWarningPanel"]
+layout_mode = 2
+text = "5.0"
+horizontal_alignment = 1

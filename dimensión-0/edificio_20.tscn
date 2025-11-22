@@ -1,0 +1,61 @@
+[gd_scene load_steps=7 format=4 uid="uid://cdc1jhb36lrs1"]
+
+[ext_resource type="Texture2D" uid="uid://0vsui1vdr650" path="res://models/edificios/building (7).jpg" id="1_axnfa"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c6jxm"]
+albedo_texture = ExtResource("1_axnfa")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k22i8"]
+resource_name = "Material.008"
+cull_mode = 2
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_d4kvq"]
+_surfaces = [{
+"aabb": AABB(-0.91223574, -1, -0.2804065, 1.8243392, 2, 0.98188055),
+"format": 34896613377,
+"index_count": 78,
+"index_data": PackedByteArray("DAABAA0AAQACAA0ADQACAAQAAQADAAIADQAEAA4ADgAEAAYABQAGAAMADgAGAAUABQADAAEAAAANAA4ADAANAAAAAAAOAAgACAAOAAUAAAAIAA8ACAAFAA8AAAAPAAwAAQAMAAcADwAFAAsABQABAAoAAQAHAAoABQAKAAsADAAJAAcADAAPAAkACQAKAAcADwALAAkACQALAAoA"),
+"lods": [0.00033899682, PackedByteArray("AAABAAIAAQADAAIAAAACAAQABQADAAEABQAGAAMABAAGAAUAAQAAAAcAAAAEAAgACAAEAAUAAAAJAAcAAAAIAAkAAQAHAAoABQABAAoACQAKAAcACAAFAAsACAALAAkABQAKAAsACQALAAoA")],
+"name": "Material.008",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("AAD//wAAAAAAALIUxfQAAAAAAAAAAAAAAAAAAMX0AAD//wAAAAAAAP//shTF9AAA//8AAMX0AAAAAP////8AAP////8AAAAA////////AAAAALIU//8AAP//shT//wAAAAD//8X0AAAAALIUAAAAAP//shQAAAAA/////8X0AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6exes"]
+resource_name = "edificios_Cube_007"
+_surfaces = [{
+"aabb": AABB(-0.91223574, -1, -0.2804065, 1.8243392, 2, 0.98188055),
+"attribute_data": PackedByteArray("sMmNhNOQBPawyf//05D//zeOjYQ3jgT2fpGNhH6R///+//////+NhLDJjYSwyf//05AE9tOQ//83jgT2N46NhP7/BPb/////fpH//36RBPb+/42E/v8E9n6RBPZ+kY2Em8IjhJ3RI4Sd0V6Mm8JejP7/BPZ+kQT2fpEE9v7/BPbTkI2EsMkE9n6RBPb+/wT2sMkE9tOQjYSd0QKMm8ICjA=="),
+"format": 34896613399,
+"index_count": 78,
+"index_data": PackedByteArray("IAABACEAIAAhAAAAAQACACEAAQADAAIAAQAgAAQAAQAEAAUABgAiACMABgAjAAkAIgAIACMAIgAHAAgACgAkAAwACgAMACUAJAANAAwAJAALAA0AJQAMAA4AJQAOAA8AGAAZACYAGAAmACcAJwAmABoAJwAaABsAEAARABIAEAASABMAFAAVABYAFAAWABcAHAAdAB4AHAAeAB8A"),
+"lods": [0.00033899682, PackedByteArray("AAABAAIAAQADAAIAAQAAAAQAAQAEAAUABgAHAAgABgAIAAkACgALAAwACwANAAwACgAMAA4ACgAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8A")],
+"material": SubResource("StandardMaterial3D_k22i8"),
+"name": "Material.008",
+"primitive": 3,
+"uv_scale": Vector4(1.759412, 2.0027373, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("AAD//wAAAAAAALIUxfQAAAAAAAAAAAAAAAAAAMX0AAAAAP////8AAAAAshT//wAAAAD//wAAAAAAAAAAAAAAAP//AAAAAAAA/////wAAAAD/////AAD/v///AAAAAP+///+yFMX0/7///wAAxfT/v///shT///+//////////7///7IUxfQAgP//AADF9ACAAAAAAMX0AIAAALIUxfQAgP///////wCA//+yFP//AIAAALIU//8AgAAA/////wCAAAD//wAA/7//////AAD/v/////////+/AAD//////7///7IUxfT/vwAAshTF9P+/AACyFP///7///7IU////vwAA///F9AAAAACyFAAAAAAAALIUAAAAAP//shQAAAAA//+yFAAA/7//////xfT/v//////F9P+/AAD//8X0/7//P/9//z//f/8//3//P/9//z//f/8//3////9/////f////3////9//38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/3////9/////f////3////9/////f////3////9////+//9//v//f/7//3////9/AAD/fwAA/38AAP9/AAD/f/8//3//P/9/////f////3//fwAA/38AAP7//3/+//9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_d4kvq")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c2vax"]
+size = Vector3(8.8376465, 11.965576, 5.920166)
+
+[node name="edificio_20" type="StaticBody3D"]
+
+[node name="Cube_007" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.82726, 0, 0, 0, 6.016323, 0, 0, 0, 6.016323, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_c6jxm")
+mesh = SubResource("ArrayMesh_6exes")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0025634766, -0.029418945, 1.2689209)
+shape = SubResource("BoxShape3D_c2vax")

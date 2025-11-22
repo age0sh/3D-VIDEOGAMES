@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ysm8pd5fj4rj"]
+
+[ext_resource type="PackedScene" uid="uid://dyo35oacq8sfb" path="res://models/Fence Pack/FenceConnector.fbx" id="1_p0ptl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p0ptl"]
+size = Vector3(1.0039063, 4.5878296, 2.008545)
+
+[node name="separador_valla" type="StaticBody3D"]
+
+[node name="FenceConnector" parent="." instance=ExtResource("1_p0ptl")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.001953125, 2.2670593, -0.010864258)
+shape = SubResource("BoxShape3D_p0ptl")

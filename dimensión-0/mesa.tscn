@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://vg8iro0n6gxx"]
+
+[ext_resource type="PackedScene" path="res://models/Low Poly Furniture - Glb/mesas/mesa1.glb" id="1_0rx7m"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0f5q7"]
+size = Vector3(7.9079866, 2.780487, 3.447211)
+
+[node name="Mesa" type="StaticBody3D"]
+
+[node name="mesa1" parent="." instance=ExtResource("1_0rx7m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4942286, 0)
+
+[node name="Table A" parent="mesa1" index="0"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.024603844, 0.5980621, -0.01188755)
+shape = SubResource("BoxShape3D_0f5q7")
+
+[editable path="mesa1"]

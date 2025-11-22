@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ryhm3i6irn7o"]
+
+[ext_resource type="PackedScene" uid="uid://cfhmer8awor7s" path="res://models/edificios/basicHousePSX.glb" id="1_rbfnm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dv6cy"]
+size = Vector3(10.184265, 5.161621, 10.150116)
+
+[node name="casa_parque" type="StaticBody3D"]
+
+[node name="basicHousePSX" parent="." instance=ExtResource("1_rbfnm")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00491333, 2.5876465, -0.008773804)
+shape = SubResource("BoxShape3D_dv6cy")

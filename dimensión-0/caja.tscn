@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=4 uid="uid://x01chpifjosn"]
+
+[ext_resource type="Texture2D" uid="uid://b2n0emr2hdxko" path="res://models/Low Poly Furniture/box/CardboardBox_1_256.png" id="1_a7ipy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_43avb"]
+size = Vector3(0.5097457, 0.5109911, 0.4932232)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qfw4h"]
+albedo_texture = ExtResource("1_a7ipy")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fk1ok"]
+resource_name = "CardboardBox_2"
+vertex_color_use_as_albedo = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_rqrk8"]
+_surfaces = [{
+"aabb": AABB(-0.0025000004, -0.0025, -0.0025000004, 0.005000001, 0.005, 0.005000001),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAgAEAAAAAQAAAAUABQAAAAQABQADAAEABgAEAAIABAAGAAUAAwAHAAIAAgAHAAYABwADAAUABQAGAAcA"),
+"name": "CardboardBox_2",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("DNcjOwrXI7sK1yM7CtcjOwrXI7sM1yO7DNcjuwrXI7sK1yO7CdcjOwrXIzsM1yO7CdcjuwrXI7sM1yM7DNcjOwrXIzsK1yM7CtcjuwrXIzsM1yM7DNcjuwrXIzsK1yO7")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_0uo3r"]
+resource_name = "Cube_001"
+_surfaces = [{
+"aabb": AABB(-0.0025000004, -0.0025, -0.0025000004, 0.005000001, 0.005, 0.005000001),
+"attribute_data": PackedByteArray("AAAgPwAAgD4AAGA/AACAPgAAYD8AAAA/AAAgPwAAAD8AACA/AAAAAAAAID8AAIA+AADAPgAAgD4AAMA+AAAAAAAAID8AAEA/AAAgPwAAgD8AAMA+AACAPwAAwD4AAEA/AADAPgAAgD4AAMA+AAAAPwAAAD4AAAA/AAAAPgAAgD4AAMA+AACAPgAAID8AAIA+AAAgPwAAAD8AAMA+AAAAPwAAwD4AAAA/AAAgPwAAAD8AACA/AABAPwAAwD4AAEA/"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_fk1ok"),
+"name": "CardboardBox_2",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("DNcjOwrXI7sK1yM7CtcjOwrXI7sM1yO7DNcjuwrXI7sK1yO7CdcjuwrXI7sM1yM7CtcjOwrXI7sM1yO7DNcjOwrXI7sK1yM7DNcjOwrXIzsK1yM7CdcjOwrXIzsM1yO7DNcjuwrXI7sK1yO7CtcjOwrXI7sM1yO7CdcjOwrXIzsM1yO7DNcjuwrXIzsK1yO7DNcjOwrXIzsK1yM7CtcjuwrXIzsM1yM7DNcjuwrXIzsK1yO7CdcjOwrXIzsM1yO7DNcjOwrXIzsK1yM7DNcjOwrXI7sK1yM7CdcjuwrXI7sM1yM7CtcjuwrXIzsM1yM7CtcjuwrXIzsM1yM7CdcjuwrXI7sM1yM7DNcjuwrXI7sK1yO7DNcjuwrXIzsK1yO7/38AAP//////fwAA//////9/AAD//////38AAP////////9//38AgP///3//fwCA////f/9/AID///9//38AgAAAAAD/fwCAAAAAAP9/AIAAAAAA/38AgAAAAAD/fwCA/3////9//7//f////3//v/9/////f/+//3////9//7//f/9//38AgP9//3//fwCA/3//f/9/AID/f/9//38AgAAA/3//fwCAAAD/f/9/AIAAAP9//38AgAAA/3//fwCA")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_rqrk8")
+
+[node name="caja" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0019213334, 0.0069994926, 0.003771782)
+shape = SubResource("BoxShape3D_43avb")
+
+[node name="CardboardBox_2" type="MeshInstance3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_qfw4h")
+mesh = SubResource("ArrayMesh_0uo3r")
+skeleton = NodePath("")

@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://jupvpk45fk4i"]
+
+[ext_resource type="Script" uid="uid://diixjo7xp7jcp" path="res://damage_zone.gd" id="1_dh2nc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dh2nc"]
+size = Vector3(20.120342, 12.885117, 7.6309814)
+
+[node name="FogDamageZone" type="Area3D"]
+script = ExtResource("1_dh2nc")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.911291, -0.03416443, -0.15228271)
+shape = SubResource("BoxShape3D_dh2nc")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

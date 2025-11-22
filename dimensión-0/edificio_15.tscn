@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=4 uid="uid://ix6elnf7ceee"]
+
+[ext_resource type="Texture2D" uid="uid://cc2pn8uxdai4w" path="res://building (16).jpg" id="1_3f8w2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_80wtj"]
+albedo_texture = ExtResource("1_3f8w2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ly42l"]
+resource_name = "Material.014"
+cull_mode = 2
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_y2n4k"]
+_surfaces = [{
+"aabb": AABB(-0.67755973, -2.961562, -1, 1.9992347, 6.835148, 2),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAwABAAAAAwAEAAEAAAACAAUABQADAAAABQACAAYABwAEAAMABQAHAAMABwAGAAQABQAGAAcA"),
+"name": "Material.014",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD/////AAAAAAAA//8AAAAAAAAAAAAA////////AAD//wAA//8AAAAA//8AAAAA//8AAAAAAAD/////AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_0lg53"]
+resource_name = "edificios_Cube_013"
+_surfaces = [{
+"aabb": AABB(-0.67755973, -2.961562, -1, 1.9992347, 6.835148, 2),
+"attribute_data": PackedByteArray("NMZqgTTG//////////9qgcWAaoHFgP//Ctv//wrbaoGZ/2qBmf///y/F//8vxWqBCttqgQrb///FgP//xYBqgV7Xe/xe14fu/9qH7v/ae/w="),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMA"),
+"material": SubResource("StandardMaterial3D_ly42l"),
+"name": "Material.014",
+"primitive": 3,
+"uv_scale": Vector4(2.792738, 1.9987866, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("AAD/////AAAAAAAA//8AAAAAAAAAAAAAAAD//wAAAAAAAP//AAAAAAAAAAAAAAAA//8AAAAAAAD/////AAAAAP////8AAP+///8AAAAA/7///wAA////v/////////+/////////AID//wAA//8AgAAAAAD//wCAAAD/////AIAAAP//AABU1f////8AAFTV////////VNUAAP////9U1f8//3//P/9//z//f/8//3/+//9/////f////3/+//9//38AAP9/AAD/fwAA/38AAP9/////f////3////9///+qqqqqqqqqqqqqqqqqqqqq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_y2n4k")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qtk2g"]
+size = Vector3(8.584839, 11.129639, 6.2355957)
+
+[node name="edificio_15" type="StaticBody3D"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="Cube_013" type="MeshInstance3D" parent="."]
+transform = Transform3D(7.809, 0, 0, 0, 3, 0, 0, 0, 5.681, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_80wtj")
+mesh = SubResource("ArrayMesh_0lg53")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3866577, 0.7352295, -0.00061035156)
+shape = SubResource("BoxShape3D_qtk2g")

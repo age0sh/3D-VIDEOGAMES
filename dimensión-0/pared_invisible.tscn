@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://m300yqnax6q2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_degtc"]
+size = Vector3(32.542725, 12.506836, 0.001)
+
+[node name="pared_invisible" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9161377, 5.753418, 0.4995)
+shape = SubResource("BoxShape3D_degtc")

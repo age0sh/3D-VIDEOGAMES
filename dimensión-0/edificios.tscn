@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cokmudmt76wkd"]
+
+[ext_resource type="PackedScene" uid="uid://gtpo3ykuoc3c" path="res://models/edificios/edificios.glb" id="1_sei1c"]
+[ext_resource type="Texture2D" uid="uid://cowredx0j5py" path="res://models/edificios/building (1).jpg" id="2_xhd42"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m44ml"]
+albedo_texture = ExtResource("2_xhd42")
+
+[node name="Edificios" type="StaticBody3D"]
+
+[node name="edificios" parent="." instance=ExtResource("1_sei1c")]
+
+[node name="Cube_015" parent="edificios" index="0"]
+material_override = SubResource("StandardMaterial3D_m44ml")
+
+[editable path="edificios"]

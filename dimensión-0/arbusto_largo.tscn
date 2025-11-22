@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=4 uid="uid://kpkb070df46d"]
+
+[ext_resource type="Texture2D" uid="uid://c33na31g3unxr" path="res://models/parque/All bushes/bushes_dead/bush_tall_dead_hedge_open_bottom_dead.png" id="1_2euwc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oysrb"]
+resource_name = "bush_dead"
+transparency = 4
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_2euwc")
+texture_filter = 2
+texture_repeat = false
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_c6tqk"]
+_surfaces = [{
+"aabb": AABB(0, -5.9604645e-08, -0.35955667, 2.0065787, 1.8765137, 0.71911407),
+"format": 34896613377,
+"index_count": 66,
+"index_data": PackedByteArray("BAAKAAsABAAHAAoACwAGAAQABwAMAAoABwAIAAwACAAGAA0ACAANAAwACwANAAYADAANAAMACwADAA0ACgAMAAkADAADAAkACwAKAAEACgAJAAEACwAAAAMACwABAAAACQADAAUAAQAJAAUAAgAFAAMAAQAFAAIAAgADAAAAAAABAAIA"),
+"lods": [0.5711268, PackedByteArray("AAABAAIAAgADAAAABAABAAAABAAAAAMAAQAFAAIAAgAFAAMABAADAAYABAAHAAEACAAGAAMACQADAAUACAADAAkAAQAJAAUABwAIAAkABwAJAAEA")],
+"name": "bush_dead",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 14,
+"vertex_data": PackedByteArray("AADl8oHaAAAAAOXyfSUAAAAA////fwAA/v/l8oHaAAAAAAAAgdoAAP7/////fwAA/v8AAIHaAAAAAAAAfSUAAP//AAB9JQAA///l8n0lAAAAADw1AAAAAAAAPDX+/wAA/v88NQAAAAD+/zw1//8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_h22ff"]
+resource_name = "bush_tall_dead_Sphere_172"
+_surfaces = [{
+"aabb": AABB(0, -5.9604645e-08, -0.35955667, 2.0065787, 1.8765137, 0.71911407),
+"attribute_data": PackedByteArray("//////2PSjP/////YHFKM/////+vgIIt//////2PfJ7/////YHF8nv/////9j0oz/////2BxSjP/////r4CCLf/////9j3ye/////2BxfJ7/////IQfLnv////+WgAUz/////5aAy57/////IQcFM/////9ocIxD/////xvtfVP/////aHBZU/////8b7YxD/////2hwvzP/////G+2MQ/////9ocIxD/////xvtnDP/////loDLnv////8hBwUz/////5aABTP/////IQfLnv////8Ja/6G/////1SW/ob/////CWv+hv////9Ulv6G/////yEHLIf/////loAsh/////+WgCyH/////yEHLIf/////IQcsh/////+WgCyH/////yEHLIf/////loAshw=="),
+"format": 34896613407,
+"index_count": 66,
+"index_data": PackedByteArray("AwAaABsAAwAEABoAGwAaAAEAGwABAAAAAAABAAIACAAcAB0ACAAJABwAHQAcAAYAHQAGAAUABQAGAAcAHgALAB8AHgANAAsADgAPABAADgARAA8AEgATABQAEgAVABMAIAAXABgAIAAhABcAIgAMAAoAIgAjAAwAFgAkACUAFgAZACQA"),
+"lods": [0.5711268, PackedByteArray("AAABAAIAAwABAAAAAwAEAAEABQAGAAcACAAGAAUACAAJAAYACgALAAwACgANAAsADgAPABAADgARAA8AEgATABQAEgAVABMAFgAXABgAFgAZABcA")],
+"material": SubResource("StandardMaterial3D_oysrb"),
+"name": "bush_dead",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 38,
+"vertex_data": PackedByteArray("AADl8oHa/78AAOXyfSX/vwAA////f/+/AAAAAIHa/78AAAAAfSX/v///5fJ9Jf+//v/l8oHa/7/+/////3//v///AAB9Jf+//v8AAIHa/78AAAAAgdq8iv7/5fKB2hOD/v8AAIHavIoAAOXygdoTgwAA////f0ix/v/l8oHaSLEAAOXygdpIsf7/////f0ixAADl8n0ltc7+/////3+1zgAA////f7XO///l8n0ltc4AAAAAfSX/////5fJ9Jf//AADl8n0l/////wAAfSX//wAAPDUAAP+/AAA8Nf7//7/+/zw1////v/7/PDUAAP+/AAA8Nf7/E4P+/zw1//8TgwAAPDUAAP///v88NQAA//8AADw1/v+8iv7/PDX//7yK/v88NQAA//8AADw1AAD///9//v//f////3/+//9/////f/7//38AAP9/AAD/fwAA/38AAP9/AAAAAP9/////fwAA/3////9/7f/Tf/3/+3/r/89//v//f/z/AYDh/xGA/v//f97/EoD6jv///39V+/9/Vfv6jv///3////9/////fwAA/38AAP///3////9//39V+/9/VfsAAP9/AAD/f/qO///6jv//")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_c6tqk")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4tg6n"]
+size = Vector3(4.0492935, 3.6732788, 0.43658447)
+
+[node name="arbusto_largo" type="StaticBody3D"]
+
+[node name="bush_tall_dead" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_h22ff")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.000225, 1.8390198, 0.027374268)
+shape = SubResource("BoxShape3D_4tg6n")

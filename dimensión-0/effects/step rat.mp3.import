@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ceyay6r6m3gbf"
+path="res://.godot/imported/step rat.mp3-7686f9cc0f07e086bcadb9a233eb7ed8.mp3str"
+
+[deps]
+
+source_file="res://effects/step rat.mp3"
+dest_files=["res://.godot/imported/step rat.mp3-7686f9cc0f07e086bcadb9a233eb7ed8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

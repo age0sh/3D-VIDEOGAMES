@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ijiix3m38dki"]
+
+[ext_resource type="PackedScene" uid="uid://crc73jsdj8630" path="res://models/Low Poly Furniture/Miscellaneous/Mug.fbx" id="1_vd6gu"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_exh36"]
+height = 0.5165405
+radius = 0.25390625
+
+[node name="Taza" type="RigidBody3D"]
+
+[node name="Mug" parent="." instance=ExtResource("1_vd6gu")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.10477692, 0.0047912598, 0)
+shape = SubResource("CylinderShape3D_exh36")

@@ -1,0 +1,116 @@
+[gd_scene load_steps=4 format=3 uid="uid://bk82md7xvngmi"]
+
+[ext_resource type="Script" uid="uid://wpbmiry7ch3n" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="AudioStream" uid="uid://2b476q5mdwsn" path="res://soundtrack/4- Arvostus.mp3" id="2_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://dbvdepj2h3ggk" path="res://fondo.jpeg" id="2_fu7sn"]
+
+[node name="MainMenu" type="Control" node_paths=PackedStringArray("main_buttons_panel", "options_panel", "menu_slider", "game_slider")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+main_buttons_panel = NodePath("MainButtons")
+options_panel = NodePath("OptionsPanel")
+menu_slider = NodePath("OptionsPanel/OptionsContainer/VolumeContainer/MenuMusicSlider")
+game_slider = NodePath("OptionsPanel/OptionsContainer/VolumeContainer2/GameMusicSlider")
+
+[node name="FondoMenu" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_fu7sn")
+expand_mode = 1
+
+[node name="MainButtons" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -63.0
+offset_top = -68.0
+offset_right = 63.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NewGameButton" type="Button" parent="MainButtons"]
+layout_mode = 2
+text = "NUEVO JUEGO"
+
+[node name="LoadGameButton" type="Button" parent="MainButtons"]
+layout_mode = 2
+text = "CARGAR JUEGO"
+
+[node name="OptionsButton" type="Button" parent="MainButtons"]
+layout_mode = 2
+text = "OPCIONES"
+
+[node name="ExitButton" type="Button" parent="MainButtons"]
+layout_mode = 2
+text = "SALIR"
+
+[node name="OptionsPanel" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OptionsContainer" type="VBoxContainer" parent="OptionsPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -67.5
+offset_right = 40.0
+offset_bottom = 67.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OptionsTitle" type="Label" parent="OptionsPanel/OptionsContainer"]
+layout_mode = 2
+text = "OPCIONES
+"
+horizontal_alignment = 1
+
+[node name="VolumeContainer" type="VBoxContainer" parent="OptionsPanel/OptionsContainer"]
+layout_mode = 2
+
+[node name="Música Menú" type="Label" parent="OptionsPanel/OptionsContainer/VolumeContainer"]
+layout_mode = 2
+text = "VOLUMEN MENÚ"
+
+[node name="MenuMusicSlider" type="HSlider" parent="OptionsPanel/OptionsContainer/VolumeContainer"]
+layout_mode = 2
+
+[node name="VolumeContainer2" type="VBoxContainer" parent="OptionsPanel/OptionsContainer"]
+layout_mode = 2
+
+[node name="Música Juego" type="Label" parent="OptionsPanel/OptionsContainer/VolumeContainer2"]
+layout_mode = 2
+text = "VOLUMEN MENÚ"
+
+[node name="GameMusicSlider" type="HSlider" parent="OptionsPanel/OptionsContainer/VolumeContainer2"]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="OptionsPanel/OptionsContainer"]
+layout_mode = 2
+text = "VOLVER"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_7vrkn")
+autoplay = true
+bus = &"Music"

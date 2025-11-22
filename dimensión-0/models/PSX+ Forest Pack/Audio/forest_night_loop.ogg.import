@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b28ocj047yc3"
+path="res://.godot/imported/forest_night_loop.ogg-c0b821a3010326c1739b26c72d2099d7.oggvorbisstr"
+
+[deps]
+
+source_file="res://models/PSX+ Forest Pack/Audio/forest_night_loop.ogg"
+dest_files=["res://.godot/imported/forest_night_loop.ogg-c0b821a3010326c1739b26c72d2099d7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

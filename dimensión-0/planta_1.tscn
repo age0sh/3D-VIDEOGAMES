@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cags7yh1qx512"]
+
+[ext_resource type="PackedScene" uid="uid://6dnkt7ukqrcj" path="res://models/Low Poly Furniture/Miscellaneous/Plant B.fbx" id="1_ik6ee"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_rgcs7"]
+height = 1.1442871
+radius = 0.4633789
+
+[node name="Planta1" type="RigidBody3D"]
+
+[node name="Plant B" parent="." instance=ExtResource("1_ik6ee")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.07067871, 0)
+shape = SubResource("CylinderShape3D_rgcs7")

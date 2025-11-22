@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bv4502wynlmcl"
+path="res://.godot/imported/step skeleton.mp3-8844bb76e65ac52cf8a6c380e5f0667e.mp3str"
+
+[deps]
+
+source_file="res://effects/step skeleton.mp3"
+dest_files=["res://.godot/imported/step skeleton.mp3-8844bb76e65ac52cf8a6c380e5f0667e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

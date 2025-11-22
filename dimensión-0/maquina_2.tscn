@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=4 uid="uid://cyhl4p2v3sabt"]
+
+[ext_resource type="Texture2D" uid="uid://c5xpaodb2yexs" path="res://models/muebles_maquinas/maquinas_M (6).png" id="1_rnmi1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wawey"]
+resource_name = "Material.005"
+cull_mode = 2
+albedo_texture = ExtResource("1_rnmi1")
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6u4ps"]
+_surfaces = [{
+"aabb": AABB(-0.4604415, -2.063656, -1.118765, 0.9208834, 4.127312, 2.237526),
+"format": 34896613377,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAAACAAMAAwACAAQAAwAEAAUABgAEAAIABQAEAAYABgACAAEABwADAAUABQAGAAcABwAAAAMAAAAHAAgABwAGAAkACQAGAAEABwAJAAgAAAAIAAoACgAIAAkAAQAAAAoACgAJAAsACQABAAsAAQAKAAsA"),
+"name": "Material.005",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("E9//////AAAT3wAA//8AAAAAAAD//wAAAAD/////AAAAAAAAAAAAAAAA//8AAAAAE98AAAAAAAAT3///AAAAAP//pviMDQAA//9YB4wNAAD//6b4cvIAAP//WAdy8gAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6f22r"]
+resource_name = "maquinas_Cube_006"
+_surfaces = [{
+"aabb": AABB(-0.4604415, -2.063656, -1.118765, 0.9208834, 4.127312, 2.237526),
+"attribute_data": PackedByteArray("2I+UpNiPWMIOiljCDoqUpKCGlKSghljCIZRYwiGUlKTYj7asDoq2rA6KN7rYjze62I+2rNiPN7oOije6Doq2rLVBNQxbrTUMW60L9rVBC/a6sxcFurMp/VutC/ZbrTUM2I9YwtiPlKSykG+lspB+wdiPN7rYj7asspBtrbKQgLmykG2t2I+2rNiPN7qykIC5DoqUpA6KWMLYj1jC2I+UpA=="),
+"format": 34896613399,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAAACAAMABAAFAAYABAAGAAcACAAJAAoACAAKAAsADAANAA4ADAAOAA8AEAARABIAEAASABMAFAAVABYAFAAWABcAGAAZABoAGAAaABsAHAAdAB4AHAAeAB8AIAAhACIAIAAiACMAJAAlACYAJAAmACcA"),
+"material": SubResource("StandardMaterial3D_wawey"),
+"name": "Material.005",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("E9//////AIAT3wAA//8AgAAAAAD//wCAAAD/////AIAAAP////8AAAAAAAD//wAAAAAAAAAAAAAAAP//AAAAABPfAAAAAP8/AAAAAAAA/z8AAAAA////PxPfAAD///8/E9///wAA/78T3///////vwAA//////+/AAD//wAA/7///6b4cvL/v///pviMDf+///9YB4wN/7///1gHcvL/vxPf//8AAP/fE98AAAAA/9///1gHjA3/3///pviMDf/fE98AAP///58T3///////n///pvhy8v+f//9YB3Ly/58T3//////8xRPf//8AAPzF//+m+IwN/MX//6b4cvL8xf//WAeMDQI6E98AAAAAAjoT3wAA//8COv//WAdy8gI6AAD//wAAAAAAAAAAAAAAABPfAAAAAAAAE9///wAAAAD/f////3////9/////f////z//f/8//3//P/9//z//fwAA/38AAP9/AAD/fwAA/3/+//9/////f/7//3/+//9//38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAAAMYAYwDGAGMAxgBjAMYAY/8cAUb/HAFG/xwBRv8cAUb///9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_6u4ps")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6tg75"]
+size = Vector3(0.93273926, 4.1337395, 2.2628288)
+
+[node name="maquina2" type="StaticBody3D"]
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="Cube_006" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
+mesh = SubResource("ArrayMesh_6f22r")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0.0072805397, -0.003168296)
+shape = SubResource("BoxShape3D_6tg75")

@@ -1,0 +1,185 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2wim4isuouck"]
+
+[ext_resource type="PackedScene" uid="uid://x01chpifjosn" path="res://caja.tscn" id="1_4lfve"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ru8gi"]
+
+[node name="Escalera de cajas" type="StaticBody3D"]
+
+[node name="caja120" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -1.2622368, 0.1845628, -0.19636652)
+
+[node name="caja121" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.7956816, 0.1845628, -0.20125389)
+
+[node name="caja122" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -1.2929562, 0.6817111, -0.19826597)
+
+[node name="caja123" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.79681075, 0.6817111, -0.20119572)
+
+[node name="caja124" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.79681075, 0.6817111, -0.20119572)
+
+[node name="caja125" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -1.2628089, 0.1845628, 0.30604446)
+
+[node name="caja126" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.76177275, 0.1845628, 0.23575872)
+
+[node name="caja127" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -1.2635324, 0.6817111, 0.30046457)
+
+[node name="caja129" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.7629019, 0.6817111, 0.29741454)
+
+[node name="caja130" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.26811332, 0.1845628, -0.23589325)
+
+[node name="caja131" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.2562232, 0.1845628, -0.259584)
+
+[node name="caja132" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.26811332, 0.6817111, -0.23589325)
+
+[node name="caja133" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.25509405, 0.6817111, -0.17566758)
+
+[node name="caja134" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.25509405, 0.6817111, -0.25478965)
+
+[node name="caja135" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.26811332, 1.1779935, -0.23589325)
+
+[node name="caja136" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.2562232, 1.1779935, -0.26897717)
+
+[node name="caja137" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.26811332, 1.6775274, -0.23589325)
+
+[node name="caja138" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.25509405, 1.6775274, -0.26891804)
+
+[node name="caja139" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.25509405, 1.6775274, -0.26891804)
+
+[node name="caja140" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.23558919, 0.1845628, 0.23531365)
+
+[node name="caja141" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.2887473, 0.1845628, 0.20223069)
+
+[node name="caja142" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.23558919, 0.6817111, 0.23531365)
+
+[node name="caja143" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.28761816, 0.6817111, 0.20228887)
+
+[node name="caja144" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.28761816, 0.6817111, 0.20228887)
+
+[node name="caja145" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.23558919, 1.1779935, 0.23531365)
+
+[node name="caja146" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.2887473, 1.1779935, 0.20223069)
+
+[node name="caja147" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, -0.23558919, 1.6775274, 0.23531365)
+
+[node name="caja148" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.28761816, 1.6775274, 0.20228887)
+
+[node name="caja149" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.28761816, 1.6775274, 0.20228887)
+
+[node name="caja150" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.799018, 0.1845628, 0.3006447)
+
+[node name="caja151" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 1.284387, 0.1845628, 0.29413986)
+
+[node name="caja152" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.799018, 0.6817111, 0.32722282)
+
+[node name="caja153" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 1.2832578, 0.6817111, 0.29419804)
+
+[node name="caja154" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 1.2832578, 0.6817111, 0.29419804)
+
+[node name="caja155" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.799018, 1.1779935, 0.32722282)
+
+[node name="caja156" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 1.284387, 1.1779935, 0.29413986)
+
+[node name="caja157" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.799018, 1.6775274, 0.32722282)
+
+[node name="caja158" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 1.2832578, 1.6775274, 0.29419804)
+
+[node name="caja159" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 1.2832578, 1.6775274, 0.29419804)
+
+[node name="caja160" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.75355065, 0.1845628, -0.20806009)
+
+[node name="caja161" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 1.2389196, 0.1845628, -0.241144)
+
+[node name="caja162" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.75355065, 0.6817111, -0.20806009)
+
+[node name="caja163" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 1.2377905, 0.6817111, -0.24108583)
+
+[node name="caja164" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 1.2377905, 0.6817111, -0.24108583)
+
+[node name="caja165" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.75355065, 1.1779935, -0.20806009)
+
+[node name="caja166" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 1.2389196, 1.1779935, -0.241144)
+
+[node name="caja167" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.75355065, 1.6775274, -0.20806009)
+
+[node name="caja168" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 1.2377905, 1.6775274, -0.24108583)
+
+[node name="caja169" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 1.2377905, 1.6775274, -0.24108583)
+
+[node name="caja170" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.75355065, 2.1866822, -0.20806009)
+
+[node name="caja171" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.75355065, 2.1866822, -0.20806009)
+
+[node name="caja172" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.783744, 2.1866822, 0.28283215)
+
+[node name="caja173" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 1.2389196, 2.1866822, -0.241144)
+
+[node name="caja174" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 1.2696623, 2.1866822, 0.26030827)
+
+[node name="caja175" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.75355065, 2.6659532, -0.20806009)
+
+[node name="caja176" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 0.783744, 2.6659532, 0.28283215)
+
+[node name="caja177" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 1.2389196, 2.6659532, -0.241144)
+
+[node name="caja178" parent="." instance=ExtResource("1_4lfve")]
+transform = Transform3D(-4.3711385e-08, 0, 0.99999994, 0, 1, 0, -0.99999994, 0, -4.3711385e-08, 1.2696623, 2.6659532, 0.26030827)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_ru8gi")
+disabled = true

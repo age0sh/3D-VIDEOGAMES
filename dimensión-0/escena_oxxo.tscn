@@ -1,0 +1,349 @@
+[gd_scene load_steps=2 format=3 uid="uid://0g62kin753iv"]
+
+[ext_resource type="PackedScene" uid="uid://dj76ctrkj1176" path="res://models/Terrain/Tacos.glb" id="1_yx8p0"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Tacos2" parent="." instance=ExtResource("1_yx8p0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04241562, 0, 0.012081146)
+
+[node name="Taco_stand" parent="Tacos2" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3149655, 0.936957, -15.590399)
+
+[node name="Taco_stand_001" parent="Tacos2" index="1"]
+transform = Transform3D(0.052336037, -0.99862957, 0, 0.99862957, 0.052336037, 0, 0, 0, 1, 4.9339743, 2.276932, -15.834988)
+
+[node name="Taco_stand_002" parent="Tacos2" index="2"]
+transform = Transform3D(0, 5.9604645e-08, 1, 0.9986295, 0.052336037, 5.9604645e-08, -0.052336007, 0.9986295, 0, 3.9298992, 2.276932, -16.710886)
+
+[node name="Taco_stand_003" parent="Tacos2" index="3"]
+transform = Transform3D(0, 5.9604645e-08, 1, 0.9986295, 0.052336037, 5.9604645e-08, -0.052336007, 0.9986295, 0, 2.2585125, 2.276932, -16.710886)
+
+[node name="Taco_stand_004" parent="Tacos2" index="4"]
+transform = Transform3D(0.051436305, 0.99867636, 0, -0.99867636, 0.051436305, 0, 0, 0, 1, 1.5514069, 2.276932, -15.834988)
+
+[node name="P_L" parent="Tacos2" index="5"]
+transform = Transform3D(0.008768898, 0.22447275, 0, -0.00735519, 0.26761767, 0, 0, 0, 0.011445192, 5.144522, 2.0705953, -16.685051)
+
+[node name="P_L_001" parent="Tacos2" index="6"]
+transform = Transform3D(0.008768898, 0.22447275, 0, -0.00735519, 0.26761767, 0, 0, 0, 0.011445192, 5.144522, 2.0705953, -14.864268)
+
+[node name="P_L_002" parent="Tacos2" index="7"]
+transform = Transform3D(1, 0, 0, 0, 0.98747945, 0.15774775, 0, -0.15774775, 0.98747945, 4.89253, 2.05284, -16.911734)
+
+[node name="P_L_003" parent="Tacos2" index="8"]
+transform = Transform3D(1, 0, 0, 0, 0.98747945, 0.15774775, 0, -0.15774775, 0.98747945, 3.247317, 2.05284, -16.911734)
+
+[node name="P_L_004" parent="Tacos2" index="9"]
+transform = Transform3D(1, 0, 0, 0, 0.98747945, 0.15774775, 0, -0.15774775, 0.98747945, 3.219027, 2.05284, -16.911734)
+
+[node name="P_L_005" parent="Tacos2" index="10"]
+transform = Transform3D(1, 0, 0, 0, 0.98747945, 0.15774775, 0, -0.15774775, 0.98747945, 1.5712628, 2.05284, -16.911734)
+
+[node name="P_L_006" parent="Tacos2" index="11"]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3633273, 2.0318224, -16.685051)
+
+[node name="P_L_007" parent="Tacos2" index="12"]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3633273, 2.0318224, -15.754427)
+
+[node name="Grill_002" parent="Tacos2" index="13"]
+transform = Transform3D(-1, 0, 0, 0, 1, -1.509958e-07, 0, 1.509958e-07, 1, 2.476036, 0.56797814, -16.179136)
+
+[node name="Shelf_S_001" parent="Tacos2" index="14"]
+transform = Transform3D(-0.63654447, 0, 9.611554e-08, 0, 0.71276045, 0, -9.611554e-08, 0, -0.63654447, 3.592579, 1.9600604, -15.002664)
+
+[node name="Grill_001" parent="Tacos2" index="15"]
+transform = Transform3D(-1, 0, 0, 0, 1, -1.509958e-07, 0, 1.509958e-07, 1, 3.6506677, 0.56797814, -16.179136)
+
+[node name="Table_001" parent="Tacos2" index="16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5437045, 0.58269507, -15.646267)
+
+[node name="Meat_001" parent="Tacos2" index="17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.052077, 1.0158453, -16.247892)
+
+[node name="Meat_003" parent="Tacos2" index="18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4894404, 1.0158453, -16.247892)
+
+[node name="Meat_002" parent="Tacos2" index="19"]
+transform = Transform3D(-0.031563282, 0, 0.99950176, 0, 1, 0, -0.99950176, 0, -0.031563282, 3.5532322, 1.0158453, -15.866413)
+
+[node name="Meat_004" parent="Tacos2" index="20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.117084, 1.0158453, -16.247892)
+
+[node name="Shelf_S_002" parent="Tacos2" index="21"]
+transform = Transform3D(-0.63654447, 0, 9.611554e-08, 0, 0.71276045, 0, -9.611554e-08, 0, -0.63654447, 2.3833134, 1.9600604, -15.002664)
+
+[node name="Shelf_S_003" parent="Tacos2" index="22"]
+transform = Transform3D(-0.63654447, 0, 9.611554e-08, 0, 0.71276045, 0, -9.611554e-08, 0, -0.63654447, 3.592579, 1.2861701, -15.002664)
+
+[node name="Shelf_S_004" parent="Tacos2" index="23"]
+transform = Transform3D(-0.63654447, 0, 9.611554e-08, 0, 0.71276045, 0, -9.611554e-08, 0, -0.63654447, 2.3833134, 1.2861701, -15.002664)
+
+[node name="Tortilla_0" parent="Tacos2" index="24"]
+transform = Transform3D(0.1849167, -0.00879016, 0.005410309, 0.009228019, 0.18428144, -0.015997523, -0.0046240697, 0.016242236, 0.18443301, 3.7530413, 1.051584, -16.014902)
+
+[node name="Tortilla_0_001" parent="Tacos2" index="25"]
+transform = Transform3D(0.18491341, -0.0052903946, -0.008931469, 0.0063484246, 0.1837085, 0.022618683, 0.008213217, -0.022889279, 0.18360107, 3.7722316, 1.0438734, -16.209164)
+
+[node name="Tortilla_0_002" parent="Tacos2" index="26"]
+transform = Transform3D(-0.013911039, 0.021734515, 0.18339802, 0.004178995, 0.1839075, -0.021477915, -0.1846341, 0.0025249873, -0.014304038, 3.9016147, 1.0482364, -16.078213)
+
+[node name="Tortilla_0_003" parent="Tacos2" index="27"]
+transform = Transform3D(0.18520455, 0, 0, 0, 0.18520455, 0, 0, 0, 0.18520455, 4.048326, 1.0155448, -15.866842)
+
+[node name="Tacos" parent="Tacos2" index="28"]
+transform = Transform3D(0.18520455, 0, 0, 0, 0.18520455, 0, 0, 0, 0.18520455, 2.372555, 1.0164961, -16.285463)
+
+[node name="Tacos_001" parent="Tacos2" index="29"]
+transform = Transform3D(0.18520455, 0, 0, 0, 0.18520455, 0, 0, 0, 0.18520455, 1.879837, 1.0180296, -16.277115)
+
+[node name="Tacos_002" parent="Tacos2" index="30"]
+transform = Transform3D(0.18520455, 0, 0, 0, 0.18520455, 0, 0, 0, 0.18520455, 2.643068, 1.0185574, -16.236872)
+
+[node name="Tortilla_0_004" parent="Tacos2" index="31"]
+transform = Transform3D(0.18520455, 0, 0, 0, 0.18520455, 0, 0, 0, 0.18520455, 2.8946433, 1.0155547, -15.864197)
+
+[node name="Tacos_003" parent="Tacos2" index="32"]
+transform = Transform3D(0.09107819, 0, -0.16126218, 0, 0.18520455, 0, 0.16126215, 0, 0.09107821, 1.8433976, 1.0180296, -16.096224)
+
+[node name="Tacos_004" parent="Tacos2" index="33"]
+transform = Transform3D(0.0724375, 0, -0.17045099, 0, 0.18520455, 0, 0.17045099, 0, 0.0724375, 1.8563285, 1.0190716, -15.882616)
+
+[node name="Tacos_005" parent="Tacos2" index="34"]
+transform = Transform3D(0.030967606, 0, 0.18259718, 0, 0.18520455, 0, -0.18259718, 0, 0.030967606, 2.1409264, 1.0180296, -15.876169)
+
+[node name="Tacos_006" parent="Tacos2" index="35"]
+transform = Transform3D(-0.059628602, 0, 0.17534295, 0, 0.18520455, 0, -0.17534295, 0, -0.059628602, 2.041509, 1.0180296, -16.06632)
+
+[node name="Tacos_007" parent="Tacos2" index="36"]
+transform = Transform3D(0.09241862, 0, 0.16049775, 0, 0.18520455, 0, -0.16049773, 0, 0.09241863, 2.116897, 1.0180296, -16.252)
+
+[node name="Tacos_008" parent="Tacos2" index="37"]
+transform = Transform3D(0.078710906, 0, -0.1676464, 0, 0.18520455, 0, 0.1676464, 0, 0.078710906, 2.3078036, 1.0160459, -16.089308)
+
+[node name="Tacos_009" parent="Tacos2" index="38"]
+transform = Transform3D(0.00814565, -0.0010729228, 0.18502223, -0.0003720611, 0.18520099, 0.0010903394, -0.18502496, -0.00041965005, 0.008143337, 2.4117794, 1.0160459, -15.892475)
+
+[node name="Tacos_010" parent="Tacos2" index="39"]
+transform = Transform3D(0.18520455, 0, 0, 0, 0.18520455, 0, 0, 0, 0.18520455, 2.5608864, 1.0185574, -16.031385)
+
+[node name="Tortilla_0_005" parent="Tacos2" index="40"]
+transform = Transform3D(0.11526456, 0, -0.14496486, 0, 0.18520455, 0, 0.14496486, 0, 0.11526456, 2.77993, 1.0155547, -16.068575)
+
+[node name="Tortilla_0_006" parent="Tacos2" index="41"]
+transform = Transform3D(0.16817495, 0, 0.07757521, 0, 0.18520455, 0, -0.07757521, 0, 0.16817495, 2.6863294, 1.0155547, -15.864197)
+
+[node name="Sauce_001" parent="Tacos2" index="42"]
+transform = Transform3D(0, 0, 0.89283633, 0, 0.89283633, 0, -0.89283633, 0, 0, 4.1629815, 1.1141187, -16.570042)
+
+[node name="Sauce_01_001" parent="Tacos2" index="43"]
+transform = Transform3D(0, 0, 0.89283633, 0, 0.89283633, 0, -0.89283633, 0, 0, 3.8082, 1.1141187, -16.570042)
+
+[node name="Sauce_02_001" parent="Tacos2" index="44"]
+transform = Transform3D(0, 0, 0.89283633, 0, 0.89283633, 0, -0.89283633, 0, 0, 3.463922, 1.1141187, -16.570042)
+
+[node name="Sauce_03_001" parent="Tacos2" index="45"]
+transform = Transform3D(0, 0, 0.89283633, 0, 0.89283633, 0, -0.89283633, 0, 0, 3.0421667, 1.1141187, -16.570042)
+
+[node name="Sauce_04_001" parent="Tacos2" index="46"]
+transform = Transform3D(0, 0, 0.89283633, 0, 0.89283633, 0, -0.89283633, 0, 0, 2.706709, 1.1141187, -16.570042)
+
+[node name="Onion_Coriander_002" parent="Tacos2" index="47"]
+transform = Transform3D(0.7623285, 0, 0, 0, 0.7623285, 0, 0, 0, 0.7623285, 2.1152642, 1.0930598, -16.583487)
+
+[node name="Onion_Coriander_003" parent="Tacos2" index="48"]
+transform = Transform3D(0.7623285, 0, 0, 0, 0.7623285, 0, 0, 0, 0.7623285, 2.4187443, 1.0930598, -16.583487)
+
+[node name="Plate_Limon_001" parent="Tacos2" index="49"]
+transform = Transform3D(0.659606, 0, 0, 0, 0.2592527, 0, 0, 0, 0.65960604, 1.8808255, 1.0681008, -16.598478)
+
+[node name="Plates_02_001" parent="Tacos2" index="50"]
+transform = Transform3D(0.07250995, 0, 0.1597125, 0, 0.17540175, 0, -0.15971251, 0, 0.072509944, 4.160738, 1.0586265, -16.844759)
+
+[node name="plastic_bag_P_004" parent="Tacos2" index="51"]
+transform = Transform3D(0.53403944, 0, 1.1762911, 0, 1.2918432, 0, -1.1762911, 0, 0.53403944, 4.160738, 1.0586265, -16.844759)
+
+[node name="Plates_001" parent="Tacos2" index="52"]
+transform = Transform3D(-0.06558348, 0, 0.16267939, 0, 0.17540175, 0, -0.16267939, 0, -0.06558348, 3.0085585, 1.0579157, -16.824343)
+
+[node name="plastic_bag_P_005" parent="Tacos2" index="53"]
+transform = Transform3D(-0.4830258, 0, 1.1981423, 0, 1.2918432, 0, -1.1981423, 0, -0.4830258, 3.0164201, 1.0579157, -16.827513)
+
+[node name="Plates_03_001" parent="Tacos2" index="54"]
+transform = Transform3D(-0.0121502485, 0, -0.17498042, 0, 0.17540175, 0, 0.17498042, 0, -0.0121502485, 2.1188893, 1.0554143, -16.848461)
+
+[node name="plastic_bag_P_006" parent="Tacos2" index="55"]
+transform = Transform3D(-0.089487225, 0, -1.28874, 0, 1.2918432, 0, 1.28874, 0, -0.089487225, 2.1188893, 1.0554143, -16.848461)
+
+[node name="Taco_001" parent="Tacos2" index="56"]
+transform = Transform3D(0.21833532, 0, 0, 0, 0.21833532, 0, 0, 0, 0.21833533, 4.2433558, 1.0701516, -16.811754)
+
+[node name="Taco_002" parent="Tacos2" index="57"]
+transform = Transform3D(0.21753602, 0, -0.018665502, 0, 0.21833532, 0, 0.018665502, 0, 0.21753602, 4.146717, 1.0701516, -16.811754)
+
+[node name="Taco_003" parent="Tacos2" index="58"]
+transform = Transform3D(0.20760617, 0.008155018, -0.06710803, -0.008492938, 0.21816996, 0.00023832309, 0.067066096, 0.0023837967, 0.20776615, 4.0627785, 1.0719475, -16.86095)
+
+[node name="Limon_001" parent="Tacos2" index="59"]
+transform = Transform3D(0.03104897, 0, 0, 0, 0.03104897, 0, 0, 0, 0.031048972, 4.216784, 1.0639491, -16.947227)
+
+[node name="Limon_01_001" parent="Tacos2" index="60"]
+transform = Transform3D(0.028242743, 0.011197739, 0.006402871, -0.011314705, 0.028906738, -0.0006453109, -0.006193832, -0.0017463138, 0.030374754, 4.1488085, 1.0680734, -16.941597)
+
+[node name="Tacos_011" parent="Tacos2" index="61"]
+transform = Transform3D(-0.06317534, 0.004304355, 0.17404331, -0.0053679533, 0.18501176, -0.0065241153, -0.17401376, -0.0072699054, -0.062984824, 2.9953094, 1.0698543, -16.756783)
+
+[node name="Tacos_012" parent="Tacos2" index="62"]
+transform = Transform3D(0.15259649, 0.0072595268, 0.10470118, -0.0026710413, 0.18496974, -0.008932101, -0.104918554, 0.0058494564, 0.15250774, 2.9693775, 1.0676546, -16.886032)
+
+[node name="Tacos_013" parent="Tacos2" index="63"]
+transform = Transform3D(-0.1825578, -0.018020066, -0.025468463, -0.01696464, 0.18421872, -0.008740394, 0.02618331, -0.006282589, -0.18323672, 3.0895157, 1.0676546, -16.839697)
+
+[node name="Limon_01_002" parent="Tacos2" index="64"]
+transform = Transform3D(0.028242743, 0.011197739, 0.006402871, -0.011314705, 0.028906738, -0.0006453109, -0.006193832, -0.0017463138, 0.030374754, 2.904891, 1.0698704, -16.800749)
+
+[node name="Limon_01_003" parent="Tacos2" index="65"]
+transform = Transform3D(0.0030866615, -0.02974238, -0.00836075, 0.0047838255, 0.008761142, -0.029400615, 0.030522551, 0.0016346235, 0.005453483, 2.8750575, 1.0780087, -16.770931)
+
+[node name="Limon_01_004" parent="Tacos2" index="66"]
+transform = Transform3D(-0.0051436624, -0.009169636, 0.029214708, 0.004078084, 0.02915498, 0.009868894, -0.030347167, 0.0054720747, -0.003625525, 2.8786483, 1.0807396, -16.836031)
+
+[node name="Tacos_014" parent="Tacos2" index="67"]
+transform = Transform3D(0.18429899, -0.01654713, -0.007797171, 0.016886214, 0.18425481, 0.008108626, 0.0070327185, -0.008779893, 0.18486261, 2.1967497, 1.0678786, -16.811054)
+
+[node name="Tacos_015" parent="Tacos2" index="68"]
+transform = Transform3D(-0.06764155, 0.00672802, -0.17227906, 0.011445938, 0.18483041, 0.002724197, 0.17203006, -0.009652173, -0.067920715, 2.054947, 1.0668058, -16.799374)
+
+[node name="Tacos_016" parent="Tacos2" index="69"]
+transform = Transform3D(0.18519765, 0.000425075, -0.001538558, -0.00046913335, 0.18512745, -0.0053227465, 0.001525701, 0.0053264466, 0.18512164, 2.1188343, 1.0658388, -16.924189)
+
+[node name="Limon_01_005" parent="Tacos2" index="70"]
+transform = Transform3D(0.015264853, -0.014172861, 0.023025047, 0.0021111702, 0.026985338, 0.015210949, -0.026954887, -0.005912694, 0.014230697, 2.0127258, 1.0672188, -16.891811)
+
+[node name="Limon_01_006" parent="Tacos2" index="71"]
+transform = Transform3D(0.029502047, 0.0073637725, -0.0062803235, -0.0011978839, 0.022771489, 0.021072801, 0.009603784, -0.019780617, 0.021921065, 2.1381388, 1.0657415, -16.722818)
+
+[node name="Limon_002" parent="Tacos2" index="72"]
+transform = Transform3D(0.030257056, 0.0065656514, -0.0023326508, -0.006639785, 0.030320605, -0.00078273955, 0.002112411, 0.0012616101, 0.030951329, 1.9675045, 1.0709839, -16.854027)
+
+[node name="Limon_003" parent="Tacos2" index="73"]
+transform = Transform3D(0.0091144005, 0.0145405745, 0.025875432, 0.0046668993, 0.02602918, -0.016270848, -0.029311882, 0.00866557, 0.0054552834, 2.0134647, 1.0776112, -16.947237)
+
+[node name="Napkins_001" parent="Tacos2" index="74"]
+transform = Transform3D(0.40892515, 0, 0, 0, 0.40892515, 0, 0, 0, 0.40892518, 2.4578533, 1.3975141, -15.0183325)
+
+[node name="Sal_001" parent="Tacos2" index="75"]
+transform = Transform3D(0, 0, 0.16254652, 0, 0.16254652, 0, -0.16254652, 0, 0, 3.6967688, 1.1496572, -16.766247)
+
+[node name="Oil_001" parent="Tacos2" index="76"]
+transform = Transform3D(0, 0, 0.20353937, 0, 0.20353937, 0, -0.20353937, 0, 0, 3.6187234, 1.3861958, -14.978502)
+
+[node name="pepper_001" parent="Tacos2" index="77"]
+transform = Transform3D(-0.36624807, 0, -1.1933878e-07, 0, 0.36624807, 0, 1.1933878e-07, 0, -0.36624807, 3.4360695, 1.0684004, -16.723215)
+
+[node name="Salt_001" parent="Tacos2" index="78"]
+transform = Transform3D(-0.36624807, 0, -1.1933878e-07, 0, 0.36624807, 0, 1.1933878e-07, 0, -0.36624807, 3.5161533, 1.0684004, -16.723215)
+
+[node name="disposable_plates_001" parent="Tacos2" index="79"]
+transform = Transform3D(0.2258737, 0, 0, 0, 0.2258737, 0, 0, 0, 0.2258737, 2.7846012, 1.4393839, -15.006614)
+
+[node name="Disposable_cups_001" parent="Tacos2" index="80"]
+transform = Transform3D(0, 0, 0.05502953, 0, 0.05502953, 0, -0.05502953, 0, 0, 3.1354353, 1.3503972, -15.009924)
+
+[node name="disposable_plates_002" parent="Tacos2" index="81"]
+transform = Transform3D(0.2258737, 0, 0, 0, 0.2258737, 0, 0, 0, 0.2258737, 2.077399, 1.4393839, -15.006614)
+
+[node name="disposable_plates_003" parent="Tacos2" index="82"]
+transform = Transform3D(0.2258737, 0, 0, 0, 0.2023222, 0, 0, 0, 0.2258737, 3.3992481, 2.1016572, -15.006614)
+
+[node name="Disposable_cups_002" parent="Tacos2" index="83"]
+transform = Transform3D(-0.05458853, 0, 0.006952813, 0, 0.05502953, 0, -0.006952813, 0, -0.05458853, 3.3251326, 1.3503972, -15.061455)
+
+[node name="Disposable_cups_003" parent="Tacos2" index="84"]
+transform = Transform3D(0.014301032, 0, -0.053138763, 0, 0.05502953, 0, 0.053138778, 0, 0.014301028, 3.4475708, 1.3503972, -14.962171)
+
+[node name="Disposable_cups_004" parent="Tacos2" index="85"]
+transform = Transform3D(-0.04275785, 0, -0.034641244, 0, 0.05502953, 0, 0.034641244, 0, -0.04275785, 2.8037574, 2.0280077, -15.022481)
+
+[node name="Oil_002" parent="Tacos2" index="86"]
+transform = Transform3D(0, 0, 0.20353937, 0, 0.20353937, 0, -0.20353937, 0, 0, 3.7784204, 1.3861958, -14.929648)
+
+[node name="Oil_003" parent="Tacos2" index="87"]
+transform = Transform3D(0, 0, 0.20353937, 0, 0.20353937, 0, -0.20353937, 0, 0, 3.8995466, 1.3861958, -15.0178385)
+
+[node name="Napkins_002" parent="Tacos2" index="88"]
+transform = Transform3D(0.40892515, 0, 0, 0, 0.40892515, 0, 0, 0, 0.40892518, 2.485083, 2.0716856, -15.007497)
+
+[node name="Napkins_003" parent="Tacos2" index="89"]
+transform = Transform3D(0.40892515, 0, 0, 0, 0.40892515, 0, 0, 0, 0.40892518, 2.0981421, 2.0716856, -14.984327)
+
+[node name="Sal_002" parent="Tacos2" index="90"]
+transform = Transform3D(0, 0, 0.16254652, 0, 0.16254652, 0, -0.16254652, 0, 0, 2.5273135, 1.1496572, -16.719984)
+
+[node name="pepper_002" parent="Tacos2" index="91"]
+transform = Transform3D(-0.36624807, 0, -1.1933878e-07, 0, 0.36624807, 0, 1.1933878e-07, 0, -0.36624807, 2.3172536, 1.0684004, -16.723215)
+
+[node name="Salt_002" parent="Tacos2" index="92"]
+transform = Transform3D(-0.36624807, 0, -1.1933878e-07, 0, 0.36624807, 0, 1.1933878e-07, 0, -0.36624807, 2.3973374, 1.0684004, -16.723215)
+
+[node name="shepherd_spinning_001" parent="Tacos2" index="93"]
+transform = Transform3D(0.31020024, 0, 0, 0, 0.31020024, 0, 0, 0, 0.31020024, 4.8429294, 1.428455, -15.254158)
+
+[node name="Board_001" parent="Tacos2" index="94"]
+transform = Transform3D(1.1439496, 0, 0, 0, 1.1439496, 0, 0, 0, 1.1439496, 4.5753455, 1.0875059, -15.896521)
+
+[node name="Chair_001" parent="Tacos2" index="121"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3972263, 0.61365217, -17.245432)
+
+[node name="Chair_002" parent="Tacos2" index="122"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3947568, 0.61365217, -17.245432)
+
+[node name="Chair_003" parent="Tacos2" index="123"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5097957, 0.61365217, -17.245432)
+
+[node name="bucket_001" parent="Tacos2" index="334"]
+transform = Transform3D(0.57679856, 0, 0, 0, -0.5404918, 0.20140788, 0, -0.20140786, -0.5404918, 0.53800726, 0.023776501, -16.008287)
+
+[node name="Refrigerator_001" parent="Tacos2" index="335"]
+transform = Transform3D(0.5975639, 0, 0, 0, 0.5975639, 0, 0, 0, 0.5975639, 1.0892674, 0.8559259, -14.662585)
+
+[node name="gas_tank_001" parent="Tacos2" index="336"]
+transform = Transform3D(-0.9948323, 0, -0.101532534, 0, 1, 0, 0.101532534, 0, -0.9948323, 2.8020625, 0.60018903, -14.514916)
+
+[node name="trash_can_001" parent="Tacos2" index="337"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0980558, 0.34817168, -16.000523)
+
+[node name="Soda_Box_02_001" parent="Tacos2" index="338"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2057853, 0.3229567, -14.551817)
+
+[node name="Soda_Box_002" parent="Tacos2" index="339"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3949778, -0.010094181, -14.5113735)
+
+[node name="Soda_006" parent="Tacos2" index="340"]
+transform = Transform3D(0.5078219, 0, 0.6423705, 0, 0.81885463, 0, -0.6423705, 0, 0.5078219, 1.8531828, 1.1663219, -16.733864)
+
+[node name="Soda_007" parent="Tacos2" index="341"]
+transform = Transform3D(0.7388455, 0, -0.35303, 0, 0.81885463, 0, 0.35303, 0, 0.7388455, 2.7820094, 1.1640766, -16.713095)
+
+[node name="Soda_008" parent="Tacos2" index="342"]
+transform = Transform3D(0.66350836, 0, -0.47987452, 0, 0.81885463, 0, 0.47987452, 0, 0.66350836, 4.5103893, 1.154512, -16.347301)
+
+[node name="Soda_009" parent="Tacos2" index="343"]
+transform = Transform3D(0.81885463, 0, 0, 0, 0.81885463, 0, 0, 0, 0.81885463, 4.618618, 1.1530249, -16.347301)
+
+[node name="Soda_010" parent="Tacos2" index="344"]
+transform = Transform3D(0.7873912, 0, -0.22480658, 0, 0.81885463, 0, 0.22480658, 0, 0.7873912, 4.482692, 1.1597347, -16.685965)
+
+[node name="brick_" parent="Tacos2" index="354"]
+transform = Transform3D(0.122848, 0, 0, 0, 0.11065509, 0, 0, 0, 0.071991794, 4.8553915, -0.093178585, -16.021166)
+
+[node name="brick__001" parent="Tacos2" index="355"]
+transform = Transform3D(0.122848, 0, 0, 0, 0.11065509, 0, 0, 0, 0.071991794, 4.8553915, -0.093178585, -15.011726)
+
+[node name="brick__002" parent="Tacos2" index="356"]
+transform = Transform3D(0.122848, 0, 0, 0, 0.11065509, 0, 0, 0, 0.071991794, 1.6333654, -0.093178585, -15.011726)
+
+[node name="brick__003" parent="Tacos2" index="357"]
+transform = Transform3D(0.122848, 0, 0, 0, 0.11065509, 0, 0, 0, 0.071991794, 1.6333654, -0.093178585, -16.021166)
+
+[editable path="Tacos2"]

@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://eule3cbey1d4"]
+
+[ext_resource type="Script" uid="uid://btosk00hy52ht" path="res://EyeEnemy.gd" id="1_42dud"]
+[ext_resource type="PackedScene" uid="uid://dksg727a0ty30" path="res://animations/ojo/eyeglb.glb" id="1_bb2di"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_42dud"]
+radius = 0.537837
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_l1f77"]
+height = 10.102478
+radius = 10.924805
+
+[node name="EyeEnemy" type="CharacterBody3D" node_paths=PackedStringArray("rotation_pivot")]
+script = ExtResource("1_42dud")
+rotation_pivot = NodePath("Pivot")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.52994514, 0)
+shape = SubResource("SphereShape3D_42dud")
+
+[node name="Pivot" type="Node3D" parent="."]
+
+[node name="eyeglb" parent="Pivot" instance=ExtResource("1_bb2di")]
+
+[node name="Muzzle" type="Marker3D" parent="Pivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5778676, -0.6152966)
+
+[node name="DetectionArea" type="Area3D" parent="."]
+
+[node name="SensorCollision" type="CollisionShape3D" parent="DetectionArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5614929, 0)
+shape = SubResource("CylinderShape3D_l1f77")
+
+[node name="ShootTimer" type="Timer" parent="."]
+one_shot = true

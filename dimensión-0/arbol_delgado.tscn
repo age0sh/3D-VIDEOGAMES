@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://0qp3njy0upw4"]
+
+[ext_resource type="PackedScene" uid="uid://7op7ru4yd772" path="res://models/PSX+ Forest Pack/Meshes/tree_tall.fbx" id="1_2wlan"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_bjdbk"]
+height = 7.2624207
+radius = 0.25732422
+
+[node name="arbol_delgado" type="StaticBody3D"]
+
+[node name="tree_tall" parent="." instance=ExtResource("1_2wlan")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09909898, 3.681839, 0)
+shape = SubResource("CylinderShape3D_bjdbk")
